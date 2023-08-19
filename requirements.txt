@@ -1,4 +1,9 @@
-numpy
-pandas
-ipykernel
--e .
+-e git+https://github.com/deep9893/Book_recommendation_system.git@3f95d3a11190bdf3b21332ec1b6816b91e465190#egg=Book_recommendation
+numpy==1.21.6
+pandas==1.3.5
+pyaml==23.5.8
+python-dateutil==2.8.2
+pytz==2023.3
+PyYAML==6.0.1
+six==1.16.0
+urllib3==2.0.4
