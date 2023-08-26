@@ -4,13 +4,14 @@ import pickle
 import streamlit as st
 import numpy as np
 from src.logger import logging
-from src.config.configuration import Configuration
-from src.pipeline.pipeline import TrainingPipeline
+from src.config.configuration import AppConfiguration
+from src.pipeline.training_pipeline import TrainingPipeline
 from src.exception import CustomException
 
 
+
 class Recommendation:
-    def __init__(self,app_config = Configuration()):
+    def __init__(self,app_config = AppConfiguration()):
         try:
             self.recommendation_config= app_config.get_recommendation_config()
         except Exception as e:
