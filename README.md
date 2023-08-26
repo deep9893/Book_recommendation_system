@@ -3,23 +3,36 @@
 # data ingestion
 
 1.config_file
+
 2.config_entity
+
 3.constant_file
+
 4.configuration_file
  * utils
+ * 
 5.data ingestion
+
 6.utils
+
 7. pipeline configuration_file
+8. 
 8.main file
 
 
 # data validation
 1. config_file
+2. 
 2.config_entity
+
 3.configuration_file
+
 4.data validation
+
 5.utils
+
 6.pipeline configuration_file
+
 7.main file
 
  # data transformation 
