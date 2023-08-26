@@ -2,7 +2,7 @@
 import os, sys
 from src.logger import logging
 from src.exception import CustomException
-from src.pipeline.pipeline import TrainingPipeline
+from src.pipeline.training_pipeline import TrainingPipeline
 
 def main():
     try:

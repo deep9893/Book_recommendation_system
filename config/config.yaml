@@ -1,10 +1,10 @@
 artifacts_config:
-  artifact_dir: artifacts
+  artifacts_dir: artifacts
 
 data_ingestion_config:
   dataset_download_url: https://github.com/Shivan118/Main-Branching/raw/main/books_data.zip
   dataset_dir: dataset
-  ingested_dir: ingested_Data
+  ingested_dir: ingested_data
   raw_data_dir: raw_data
 
 
@@ -14,37 +14,14 @@ data_validation_config:
   books_csv_file: BX-Books.csv
   ratings_csv_file: BX-Book-Ratings.csv
 
-
-data_translation_config:
+data_transformation_config:
   transformed_data_dir: transformed_data
 
 
-model_training_config:
+model_trainer_config:
   trained_model_dir: trained_model
   trained_model_name: model.pkl
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# data_validation_config:
-#   clean_data_dir: clean_data
-#   objects_dir: objects
-#   books_csv_files: BX-Books.csv
-#   ratings_csv_file: BX-Book-Ratings.csv
+recommendation_config:
+  poster_api_url: https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US

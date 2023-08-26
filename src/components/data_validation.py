@@ -1,15 +1,16 @@
-import os, sys
+import os
+import sys
+import ast 
 import pandas as pd
-import numpy as np
-from src.logger import logging
-from src.exception import CustomException
-from src.config.configuration import Configuration
 import pickle
+from src.logger import logging
+from src.config.configuration import AppConfiguration
+from src.exception import CustomException
 
 
 
 class DataValidation:
-    def __init__(self, app_config = Configuration()):
+    def __init__(self, app_config = AppConfiguration()):
         try:
             self.data_validation_config= app_config.get_data_validation_config()
         except Exception as e:

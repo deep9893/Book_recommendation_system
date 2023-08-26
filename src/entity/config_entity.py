@@ -1,8 +1,8 @@
 from collections import namedtuple
 
-DataIngestionConfig = namedtuple("DatasetConfig",["dataset_download_url",
-                                                  "raw_data_dir",
-                                                  "ingested_dir"])
+DataIngestionConfig = namedtuple("DatasetConfig", ["dataset_download_url",
+                                                   "raw_data_dir",
+                                                   "ingested_dir"])
 
 
 DataValidationConfig = namedtuple("DataValidationConfig", ["clean_data_dir",
@@ -10,9 +10,18 @@ DataValidationConfig = namedtuple("DataValidationConfig", ["clean_data_dir",
                                                          "ratings_csv_file",
                                                          "serialized_objects_dir"])     
 
-DataTransformerConfig = namedtuple("DataTransformerConfig",['transformed_data_dir',
-                                                            'clean_data_file_path'])
 
-Model_TrainerConfig = namedtuple("Model_TrainerConfig",['transformed_data_file_dir',
-                                                        'trained_model_dir',
-                                                        'trained_model_name'])
+DataTransformationConfig = namedtuple("DataTransformationConfig", ['transformed_data_dir',
+                                                                   "clean_data_file_path"])
+
+ModelTrainerConfig = namedtuple("ModelTrainerConfig",['transformed_data_file_dir',
+                                                       'trained_model_dir',
+                                                       'trained_model_name'])
+
+
+ModelRecommendationConfig = namedtuple("ModelRecommendationConfig", ["book_name_serialized_objects",
+                                                      "book_pivot_serialized_objects",
+                                                      "final_rating_serialized_objects",
+                                                      "trained_model_path"])
+
+               
